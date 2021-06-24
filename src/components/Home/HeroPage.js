@@ -21,6 +21,19 @@ const HeroPage = () => {
     }
   };
 
+  const renderHotelList = () => {
+    let hotels = hotelState.filter((hotel) => {
+      return electedCity === hotel.city;
+    });
+    hotels.map((hotel) => {
+      return (
+        <option key={hotel._id} value={hotel.hotelName}>
+          {hotel.hotelName} | {hotel.city}
+        </option>
+      );
+    });
+  };
+
   return (
     <div className="hero_page">
       <div className="hero_content">
@@ -58,16 +71,7 @@ const HeroPage = () => {
               <option value="Select hotel here" selected>
                 Select hotel here
               </option>
-              {selectedCity &&
-                hotelState.map((hotel) => {
-                  if (selectedCity === hotel.city) {
-                    return (
-                      <option key={hotel._id} value={hotel.hotelName}>
-                        {hotel.hotelName} | {hotel.city}
-                      </option>
-                    );
-                  }
-                })}
+              {selectedCity && renderHotelList}
             </select>
           </div>
           <button

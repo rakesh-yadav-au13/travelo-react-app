@@ -4,7 +4,6 @@ import "./AddHotel.css";
 const AddHotel = (props) => {
   const addHotelUrl = "https://travelo-apps.herokuapp.com/api/addhotel";
   const [validationError, setValidationError] = useState("");
-  const [error, setError] = useState("");
   const [previewSource, setPreviewSource] = useState([]);
   const [form, setForm] = useState({
     hotelName: null,
@@ -16,7 +15,6 @@ const AddHotel = (props) => {
     facility: [],
     hotelImg: [],
   });
-  console.log(form.rating);
   const submitHeandler = () => {
     fetch(addHotelUrl, {
       method: "POST",
@@ -58,20 +56,23 @@ const AddHotel = (props) => {
 
   const imgHeandler = (e) => {
     const value = e.target.files[0];
-    if (previewSource.length !== 0) {
-      previewSource.filter((image) => {
-        if (image.name === value.name) {
-          return setError("Image must be different");
-        } else {
-          setPreviewSource([...previewSource, value]);
-          previewFile(value);
-          setError("");
-        }
-      });
-    } else {
-      setPreviewSource([value]);
-      previewFile(value);
-    }
+    setPreviewSource([...previewSource, value]);
+    previewFile(value);
+    // if (previewSource.length !== 0) {
+    //   previewSource.filter((image) => {
+    //     if (image.name === value.name) {
+    //       return setError("Image must be different");
+    // setPreviewSource([...previewSource, value]);
+    // previewFile(value);
+    //     } else {
+
+    //       setError("");
+    //     }
+    //   });
+    // } else {
+    //   setPreviewSource([value]);
+    //   previewFile(value);
+    // }
   };
 
   const facilityHandler = (e) => {
