@@ -25,7 +25,7 @@ const HeroPage = () => {
     let hotels = hotelState.filter((hotel) => {
       return selectedCity === hotel.city;
     });
-    hotels.map((hotel) => {
+    return hotels.map((hotel) => {
       return (
         <option key={hotel._id} value={hotel.hotelName}>
           {hotel.hotelName} | {hotel.city}
@@ -71,7 +71,7 @@ const HeroPage = () => {
               <option value="Select hotel here" selected>
                 Select hotel here
               </option>
-              {selectedCity && renderHotelList}
+              {selectedCity && renderHotelList()}
             </select>
           </div>
           <button
