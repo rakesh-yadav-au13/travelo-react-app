@@ -45,7 +45,7 @@ function App() {
   useEffect(() => {
     renderCity();
     renderHotel();
-  }, []);
+  });
 
   useEffect(() => {
     const userProfile = localStorage.getItem("user");
@@ -55,7 +55,7 @@ function App() {
         payload: JSON.parse(userProfile),
       });
     }
-  }, []);
+  });
 
   return (
     <BrowserRouter>
