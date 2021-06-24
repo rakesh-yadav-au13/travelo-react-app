@@ -234,11 +234,7 @@ const AddHotel = (props) => {
             </div>
           </div>
         </div>
-        {error && (
-          <div className="file_err">
-            <p>{error}</p>
-          </div>
-        )}
+
         <div className="col-6 col-md-3">
           <div className="form-group">
             <label for="exampleFormControlFile1">Hotel Image</label>

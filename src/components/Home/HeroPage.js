@@ -23,7 +23,7 @@ const HeroPage = () => {
 
   const renderHotelList = () => {
     let hotels = hotelState.filter((hotel) => {
-      return electedCity === hotel.city;
+      return selectedCity === hotel.city;
     });
     hotels.map((hotel) => {
       return (
