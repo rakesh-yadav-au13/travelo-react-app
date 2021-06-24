@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&display=swap");
+:root {
+  --color: #e9776a;
+  --hover: #dd4432;
+}
+
+.hero_page {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../img/heroImg3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_content {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero_content > h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: "Merienda One", cursive;
+  font-style: italic;
+  margin: 0px;
+  padding: 0px;
+  /* color: rgb(233, 231, 231); */
+  color: white;
+}
+
+.hero_content > h1 > span {
+  margin: 0px 10px;
+}
+
+.hero_content > p {
+  font-size: 2.8rem;
+  margin: 3rem 0px;
+  color: rgb(233, 231, 231);
+  font-family: "Amita", cursive;
+}
+
+.header_select {
+  width: 100%;
+  height: 7rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.header_select_box {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.header_select_box > select {
+  /* border-radius: 10px 0px 0px 10px; */
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-right: 2px solid lightgray;
+  outline: none;
+  text-align-last: center;
+  padding-right: 10px;
+  color: var(--hover);
+}
+
+.header_select_box > select > option {
+  color: black;
+  text-align-last: center;
+  text-indent: 40%;
+}
+
+.Hero_btn {
+  width: 100%;
+  height: 100%;
+  background-color: var(--hover);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  /* border-radius: 0px 5px 5px 0px; */
+  transition: 2s;
+  border: 2px solid var(--hover);
+}
+
+.Hero_btn:hover {
+  background: white;
+  color: var(--hover);
+}
+
+/* ******************************** top cities ********************************* */
+
+.top_Cities {
+  padding: 30px 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.top_cities_heading {
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top_cities_heading > h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Merienda One", cursive;
+  color: var(--hover);
+}
+
+.bottom_line {
+  height: 3px;
+  width: 15%;
+  border-radius: 10px;
+  background: #000;
+  text-align: center;
+}
+
+.top_cities_card > a {
+  text-decoration: none;
+}
+
+.city_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: transparent;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.city_img_container > img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.city_img_container > h4 {
+  font-size: 2.4rem;
+
+  color: var(--hover);
+}
+
+@media screen and (max-width: 960px) {
+  .hero_content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .hero_content {
+    width: 90%;
+  }
+}

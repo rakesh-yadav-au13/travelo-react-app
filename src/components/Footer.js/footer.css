@@ -1,0 +1,35 @@
+.sozial > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2vw;
+}
+
+.footer_container {
+  width: 100%;
+  padding-top: 2vh;
+  background-color: rgb(64, 62, 62);
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  width: 100%;
+  background: #000;
+}
+
+.logo {
+  height: 8vh;
+}
+
+@media (max-width: 768px) {
+  li {
+    margin-left: 0;
+    margin-bottom: 1vh;
+  }
+
+  .sozial {
+    margin-bottom: 1vh;
+  }
+}
