@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./HotelViewComp.css";
 
-const PostOrderUrl = "https://travelo-apps.herokuapp.com/api/order";
+const PostOrderUrl = "https://travelo-apk.herokuapp.com/api/order";
 
 // When the user clicks on <span> (x), close the modal
 const cencelHendler = () => {

@@ -3,8 +3,7 @@ import moment from "moment";
 import PageNotFound from "../PageNotFound";
 
 const HotelBooking = () => {
-  const hotelBookingUrl =
-    "https://travelo-apps.herokuapp.com/api/hotelbookings";
+  const hotelBookingUrl = "https://travelo-apk.herokuapp.com/api/hotelbookings";
 
   const [bookingData, setBookingData] = useState("");
 

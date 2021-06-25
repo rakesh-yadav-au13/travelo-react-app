@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Bookings from "../../components/Bookings";
 
 const Booking = (props) => {
-  const userBookingUrl = "https://travelo-apps.herokuapp.com/api/bookings";
+  const userBookingUrl = "https://travelo-apk.herokuapp.com/api/bookings";
   const [bookingData, setBookingData] = useState("");
 
   const getBookingData = () => {

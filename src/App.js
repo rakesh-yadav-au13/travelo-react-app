@@ -6,8 +6,8 @@ import Routes from "./Routes";
 import { authAction, cityAction, hotelAction } from "./actions";
 
 function App() {
-  const getcityUrl = "https://travelo-apps.herokuapp.com/api/getcity";
-  const getHotelsUrl = "https://travelo-apps.herokuapp.com/api/gethotels";
+  const getcityUrl = "https://travelo-apk.herokuapp.com/api/getcity";
+  const getHotelsUrl = "https://travelo-apk.herokuapp.com/api/gethotels";
   const dispatch = useDispatch();
 
   const renderCity = () => {

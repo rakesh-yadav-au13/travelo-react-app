@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./AddHotel.css";
 
 const AddHotel = (props) => {
-  const addHotelUrl = "https://travelo-apps.herokuapp.com/api/addhotel";
+  const addHotelUrl = "https://travelo-apk.herokuapp.com/api/addhotel";
   const [validationError, setValidationError] = useState("");
   const [previewSource, setPreviewSource] = useState([]);
   const [form, setForm] = useState({

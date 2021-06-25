@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { authAction } from "../../actions";
 
 const Login = (props) => {
-  const loginUrl = "https://travelo-apps.herokuapp.com/api/login";
+  const loginUrl = "https://travelo-apk.herokuapp.com/api/login";
 
   const [validationErr, setValidationErr] = useState("");
 

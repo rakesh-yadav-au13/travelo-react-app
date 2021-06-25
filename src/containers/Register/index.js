@@ -12,7 +12,7 @@ const Register = (props) => {
   });
 
   const signupFormHandler = () => {
-    const signupUrl = "https://travelo-apps.herokuapp.com/api/signup";
+    const signupUrl = "https://travelo-apk.herokuapp.com/api/signup";
 
     fetch(signupUrl, {
       method: "POST",

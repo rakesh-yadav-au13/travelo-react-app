@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import HotellistComp from "../HotellistComp";
 
 const YourHotel = () => {
-  const yourHotelurl = "https://travelo-apps.herokuapp.com/api/yourhotel";
+  const yourHotelurl = "https://travelo-apk.herokuapp.com/api/yourhotel";
   const [yourHotel, setYourHotel] = useState("");
   const GetYourHotel = () => {
     fetch(yourHotelurl, {
