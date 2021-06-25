@@ -1,3 +1,7 @@
+.booking_container {
+  min-height: 70vh;
+}
+
 .booking_page {
   margin: 20px auto;
   min-height: 70vh;

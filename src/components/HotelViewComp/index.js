@@ -76,7 +76,8 @@ const HotelViewComp = ({ hoteldata }) => {
     })
       .then((res) => res.json())
       .then((result) => {
-        if (result.errors) {
+        console.log(result);
+        if (result.errors.length >= 1) {
           setValidationError(...result.errors);
         } else {
           history.push("/userbookings");

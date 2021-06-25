@@ -28,11 +28,16 @@ const Booking = (props) => {
   const renderBooking = () => {
     if (bookingData.length > 0) {
       return <Bookings bookings={bookingData} />;
+    } else {
+      return <Bookings bookings={null} />;
     }
-    return <Bookings bookings={null} />;
   };
 
-  return <div className="container">{renderBooking()}</div>;
+  return (
+    <div className="container">
+      <div className="booking_container">{bookingData && renderBooking()}</div>
+    </div>
+  );
 };
 
 export default Booking;

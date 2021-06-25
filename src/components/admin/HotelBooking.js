@@ -31,7 +31,7 @@ const HotelBooking = () => {
   return (
     <div className="container">
       <div className="booking_page">
-        {bookingData ? (
+        {bookingData.length > 0 ? (
           <div className="booking_page_details">
             <div className="booking_page_heading my-5">
               <h2>{bookingData[0]?.hotelId.hotelName}</h2>
